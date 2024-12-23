@@ -22,18 +22,17 @@ const Contact = () => {
         e.preventDefault()
         setSending(true)
         try {
-           const baseurl ='https://forms-io.onrender.com/submit-form/25ac61a0-4549-423e-8661-c085a898d155'
+           const baseurl ='https://formserver-srjh.onrender.com/submit-form/f93837d0-30b7-40d9-bfd2-5d0df4b61e8f'
            const response  = await fetch (baseurl,{
-              method: 'POST',
+              method:'POST',
               headers: {'Content-type' : 'application/json'},
               body : JSON.stringify({name, email, subject, message})    
            }); console.log(response)
            await response.json()
            if (response.ok){ 
             setSending(false)
-            toast.success('message sent!!!')    
-            console.log(toast.success)
-              
+            toast.status('message sent!!!')    
+            console.log(toast.success) 
            }
         } catch (error) {
             setSending(false)
@@ -42,7 +41,7 @@ const Contact = () => {
         }
 
     }
-    
+     
 
   return (
     <div  id='Contact'  className=' flex justify-center max-md:flex-col  overflow-hidden items-center p-[5%] gap-[20%] bg-black '>
