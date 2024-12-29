@@ -40,7 +40,7 @@ const Skills = () => {
     <div   id='Skills' className="p-6   flex-col  gap-3  flex  mx-auto bg-[#E9E9E9]  shadow-md ">
          <div className=' flex flex-col gap-4 items-center justify-center  text-center  '>
            <h1 className='text-[30px] font-serif text-[#CF1F1F]'>I have high skills in developing and programming </h1>
-           <p className='w-[50vw] max-sm:w-[95vw] font-mono '>I was doing everything in my power to provide me with all the experiences to provide cost-effective and high quality products to satisfy my customers all over the world.</p>
+           <p className='w-[50vw] max-sm:w-[95vw] font-mono  max-lg:w-[80vw]'>I was doing everything in my power to provide me with all the experiences to provide cost-effective and high quality products to satisfy my customers all over the world.</p>
          </div>
         <div className=' flex flex-col '>
             <h2 className="text-2xl  text-[#CF1F1F] font-mono text-center mt-3 font-bold mb-4">Skills</h2>

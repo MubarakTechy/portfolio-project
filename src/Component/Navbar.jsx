@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden  max-lg:flex-none md:block">
             <ul className="flex space-x-8">
               <li >
                 <span onClick={() => scrollToSection("Hero")}   className="relative    font-mono text-lg text-gray-100 hover:text-red-500 transition-all duration-500 ease-in-out cursor-pointer group">
@@ -76,7 +76,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-100 hover:text-red-500 transition-colors duration-500 focus:outline-none"
@@ -92,7 +92,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div 
-          className={`md:hidden items-center text-center overflow-hidden transition-all duration-500 ease-in-out ${
+          className={`md:hidden  max-lg:hidden items-center text-center overflow-hidden transition-all duration-500 ease-in-out ${
             isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >

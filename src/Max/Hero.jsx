@@ -16,7 +16,7 @@ const Hero = () => {
     <div  id='Hero'  className='mark  flex-col flex justify-center  items-center p-[15vw] '>
          <div className=' flex flex-col items-center  gap-4'> 
             <div>
-              <div  className='flex text-center  items-center'><h1 className='font-mono text-[30px] text-[white]  '>WEB DEVELOPER</h1></div>
+             
               <h1 className='font-bold max-sm:text-[35px]  text-[50px] text-[#CF1F1F]'>
               <Typewriter
               options={{ 
@@ -26,6 +26,7 @@ const Hero = () => {
             }}/>
             </h1>
             </div>
+          
            <div className='flex text-center  items-center  gap-4 '> 
                 <IoLogoHtml5 className='text-[white] hover:text-[#CF1F1F]' size={40} />
                 <RiTailwindCssFill  className='text-[white] hover:text-[#CF1F1F]' size={40}  />
