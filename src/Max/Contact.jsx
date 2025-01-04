@@ -78,7 +78,7 @@ const Contact = () => {
                    <FaPhone className='text-[#cF1F1F] animate-spin ' size={30} />
                     <h1  className=' font-serif text-[22px] text-[#CF1F1F]'>Phone </h1>
                 </div>
-                 <span className='font-mono  text-[15px] text-white'>07066214165</span>
+                 <span className='font-mono  text-[15px] text-white'> +44 7428287353 & 07066214165 </span>
             </div>
             <div className='flex flex-col  gap-3'>
                 <div className='  gap-3' >

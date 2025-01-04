@@ -1,0 +1,84 @@
+import React, { useState } from 'react';
+
+const ImageOverlay = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div className="relative max-w-sm overflow-hidden group">
+      <img 
+        src="/api/placeholder/400/300"
+        alt="Sample image"
+        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+      />
+      
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        {/* Overlay content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+          <h3 className="text-xl font-bold mb-2">Image Title</h3>
+          <p className="text-sm text-center">
+            This is an overlay description that appears on hover
+          </p>
+          <button className="mt-4 px-4 py-2 bg-white text-black rounded hover:bg-gray-200 transition-colors">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ImageOverlay;
+
+
+
+
+
+
+import React from 'react'
+import photo1 from '../image/3.jpg';
+import photo2 from '../image/3.jpg';
+import photo3 from '../image/3.jpg';
+import photo4 from '../image/3.jpg';
+import photo5 from '../image/3.jpg';
+import photo6 from '../image/3.jpg';
+
+const Porfolio = () => {
+  const restImages = [
+    { 
+      id: 1,  src: photo1.src, alt: 'photo1' 
+    },
+    { 
+      id: 2, src: photo2.src, alt: 'photo2' 
+    },
+    { 
+      id: 3,  src: photo3.src, alt: 'photo3' 
+    },
+    { 
+      id: 4,  src: photo4.src, alt: 'photo4' 
+    },
+    { 
+      id: 5,  src: photo5.src, alt: 'photo5' 
+    },
+    { 
+      id: 6,  src: photo6.src, alt: 'photo6',tittle:"link to pages", 
+    },
+  ];
+  
+  return (
+    <div  className='flex justify-between items-center bg-[#000000] gap-10 flex-col p-10 '>
+        <h1 className='font-mono text-[30px] text-[#CF1F1F]  '>--Portfolio-- </h1>
+        <div className="grid max-sm:flex-col grid-cols-3 gap-4">
+          {restImages.map((img) => (
+            <div key={img.id} className="rounded-lg overflow-hidden ">
+              <img  src={img.src} alt={img.alt}  className=""
+              />
+            </div>
+          ))}
+        </div>
+       
+    </div>
+  )
+}
+
+export default Porfolio

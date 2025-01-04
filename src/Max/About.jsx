@@ -3,7 +3,7 @@ import Max2 from '../image/IMG-20240810-WA0044_1.jpg';
 
 import { FaPenClip } from "react-icons/fa6";
 import { AiOutlineUser } from "react-icons/ai";
-import { IoCodeSlash } from "react-icons/io5";cbchds
+import { IoCodeSlash } from "react-icons/io5";
 
 // About component with image, text, and buttons. The buttons are currently empty placeholders.
 const About = () => {
