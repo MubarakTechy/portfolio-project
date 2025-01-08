@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { IoLogoHtml5 } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa6";
-import { DiBootstrap } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandJavascript } from "react-icons/tb";
 
 
@@ -31,7 +31,7 @@ const Hero = () => {
                 <IoLogoHtml5 className='text-[white] hover:text-[#CF1F1F]' size={40} />
                 <RiTailwindCssFill  className='text-[white] hover:text-[#CF1F1F]' size={40}  />
                 <FaReact   className='text-[white] hover:text-[#CF1F1F]' size={40} />
-                <DiBootstrap   className='text-[white] hover:text-[#CF1F1F]' size={40} />
+                <IoLogoFirebase    className='text-[white] hover:text-[#CF1F1F]' size={40} />
                 <TbBrandJavascript   className='text-[white] hover:text-[#CF1F1F]' size={40} /> 
            </div>
          </div>

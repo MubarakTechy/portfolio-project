@@ -65,7 +65,7 @@ const Portfolio = () => {
 
   return (
     <div className="flex justify-between items-center bg-black gap-10 flex-col p-10">
-      <h1 className="font-mono text-3xl text-[#CF1F1F]">--Portfolio--</h1>
+      <h1 className="font-mono text-[40px] text-[#CF1F1F]">--Portfolio--</h1>
       
       <div className="grid max-sm:grid-cols-1 grid-cols-3 gap-4 w-full">
         {portfolioItems.map((item) => (
