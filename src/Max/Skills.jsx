@@ -33,7 +33,6 @@ const Skills = () => {
     { skill: "JavaScript", percentage: 50 },
     { skill: "React", percentage: 75 },
     { skill: "Next.js", percentage: 80 },
-    
   ]
 
   return (
