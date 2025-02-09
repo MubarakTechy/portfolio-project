@@ -13,16 +13,16 @@ const Portfolio = () => {
       src: photo1.src,
       alt: 'photo1',
       title: 'Project 1',
-      description: 'Description for Project 1',
-      url: "https://google.com"
+      description: ' AI project' ,
+      url: "https://app.youlearn.ai/"
     },
     {
       id: 2,
       src: photo2.src,
       alt: 'photo2',
       title: 'Project 2',
-      description: 'Description for Project 2',
-      url: "google.com"
+      description: 'AI project for students',
+      url: "https://www.iu.org/blog/ai-and-education/best-ai-tools-for-students/"
 
     },
     {
@@ -30,8 +30,8 @@ const Portfolio = () => {
       src: photo3.src,
       alt: 'photo3',
       title: 'Project 3',
-      description: 'Description for Project 3',
-      url: "facebook.com"
+      description: ' health company project',
+      url: " https://fikr-health.vercel.app/"
 
     },
     {
@@ -39,8 +39,8 @@ const Portfolio = () => {
       src: photo4.src,
       alt: 'photo4',
       title: 'Project 4',
-      description: 'Description for Project 4',
-      url: "google.com"
+      description: ' LMS project',
+      url: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiP9PX-pLaLAxVuolAGHSxaAHEYABAWGgJkZw&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y9nTw7T0zshE6qCiRJGRvFYnnRAB67wSbvvDl48cgKhOJJAfjCP0cRoCViMQAvD_BwE&ohost=www.google.com&cid=CAESVOD2pOT0_20TU2JC5hzlSOzJjLi12X_WF5QqJ1spYeX0mqsR_th_TG1s1xhDrenx1osqvuHJOYqKIN7_jEd-QHI34j5YQ-5Oi5R0VDj-GHvATsnj7g&sig=AOD64_0Fri0n2fQwMMJ8PHafvTOWsiwBwA&q&adurl&ved=2ahUKEwiAg_D-pLaLAxXGVkEAHRaGAEIQ0Qx6BAgJEAE"
 
     },
     {
@@ -48,8 +48,8 @@ const Portfolio = () => {
       src: photo5.src,
       alt: 'photo5',
       title: 'Project 5',
-      description: 'Description for Project 5',
-      url: "google.com"
+      description: ' Formserver project',
+      url: "https://formserverweb.vercel.app/"
 
     },
     {
@@ -58,7 +58,7 @@ const Portfolio = () => {
       alt: 'photo6',
       title: 'Link to pages',
       description: 'Click to view more details',
-      url: "google.com"
+      url: "https://ib-academy.nl/"
 
     },
   ];
