@@ -5,7 +5,7 @@ const ProgressBar = ({ skill, percentage }) => {
   const [width, setWidth] = useState(0)
 
   useEffect(() => {
-    const timer = setTimeout(() => setWidth(percentage), 100)
+    const time = setTimeout(() => setWidth(percentage), 100)
     return () => clearTimeout(1)
   }, [percentage])
 

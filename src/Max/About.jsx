@@ -1,6 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
 import Max2 from '../image/IMG-20240810-WA0044_1.jpg';
-
 import { FaPenClip } from "react-icons/fa6";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoCodeSlash } from "react-icons/io5";
@@ -10,7 +10,14 @@ const About = () => {
   return (
     <div id='About' className='bg-[#E9E9E9]  flex flex-col justify-center items-center overflow-hidden p-10'>
         <div className=' flex  max-md:flex-col max-lg:flex-col justify-center items-center gap-10 '>
-            <div><img className='about-img w-[35vw] max-sm:w-[70vw]  ' src={Max2.src} alt="" /></div>
+        <Image
+          className='about-img w-[35vw] max-sm:w-[70vw]'
+          src={Max2.src}
+          alt="Max profile"
+          width={500}  // Adjust based on your actual image size
+          height={300} // Adjust based on your actual image size
+          priority  // Add this if it's an important above-the-fold image
+        />
            <div className='flex flex-col gap-7 '>
               <h1 className=' text-6xl font-mono text-center text-[#CF1F1F]'>About me</h1>
               <p className='text-lg text-gray-600  max-lg:w-[90vw]  max-sm:w-[90vw] max-md:w-[100vw] w-[45vw] font-mono text-start'>Hi, I'm Mubarak – a passionate web developer with 3 years of experience crafting impactful digital experiences. I thrive on turning ideas into interactive, user-friendly websites. From concept to deployment, I bring dedication and precision to every project. Let's build something amazing together.</p>

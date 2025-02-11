@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import photo1 from '../image/3.jpg';
 import photo2 from '../image/2.jpg';
 import photo3 from '../image/3 (1).jpg';
@@ -14,7 +15,9 @@ const Portfolio = () => {
       alt: 'photo1',
       title: 'Project 1',
       description: ' AI project' ,
-      url: "https://app.youlearn.ai/"
+      url: "https://app.youlearn.ai/",
+      width: 500,  // specify actual width
+      height: 300  // specify actual height
     },
     {
       id: 2,
@@ -22,7 +25,9 @@ const Portfolio = () => {
       alt: 'photo2',
       title: 'Project 2',
       description: 'AI project for students',
-      url: "https://www.iu.org/blog/ai-and-education/best-ai-tools-for-students/"
+      url: "https://www.iu.org/blog/ai-and-education/best-ai-tools-for-students/",
+      width: 500,  // specify actual width
+      height: 300  // specify actual height
 
     },
     {
@@ -31,7 +36,9 @@ const Portfolio = () => {
       alt: 'photo3',
       title: 'Project 3',
       description: ' health company project',
-      url: " https://fikr-health.vercel.app/"
+      url: " https://fikr-health.vercel.app/",
+      width: 500,  // specify actual width
+      height: 300  // specify actual height
 
     },
     {
@@ -40,7 +47,9 @@ const Portfolio = () => {
       alt: 'photo4',
       title: 'Project 4',
       description: ' LMS project',
-      url: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiP9PX-pLaLAxVuolAGHSxaAHEYABAWGgJkZw&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y9nTw7T0zshE6qCiRJGRvFYnnRAB67wSbvvDl48cgKhOJJAfjCP0cRoCViMQAvD_BwE&ohost=www.google.com&cid=CAESVOD2pOT0_20TU2JC5hzlSOzJjLi12X_WF5QqJ1spYeX0mqsR_th_TG1s1xhDrenx1osqvuHJOYqKIN7_jEd-QHI34j5YQ-5Oi5R0VDj-GHvATsnj7g&sig=AOD64_0Fri0n2fQwMMJ8PHafvTOWsiwBwA&q&adurl&ved=2ahUKEwiAg_D-pLaLAxXGVkEAHRaGAEIQ0Qx6BAgJEAE"
+      url: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiP9PX-pLaLAxVuolAGHSxaAHEYABAWGgJkZw&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y9nTw7T0zshE6qCiRJGRvFYnnRAB67wSbvvDl48cgKhOJJAfjCP0cRoCViMQAvD_BwE&ohost=www.google.com&cid=CAESVOD2pOT0_20TU2JC5hzlSOzJjLi12X_WF5QqJ1spYeX0mqsR_th_TG1s1xhDrenx1osqvuHJOYqKIN7_jEd-QHI34j5YQ-5Oi5R0VDj-GHvATsnj7g&sig=AOD64_0Fri0n2fQwMMJ8PHafvTOWsiwBwA&q&adurl&ved=2ahUKEwiAg_D-pLaLAxXGVkEAHRaGAEIQ0Qx6BAgJEAE",
+      width: 500,  // specify actual width
+      height: 300  // specify actual height
 
     },
     {
@@ -49,7 +58,9 @@ const Portfolio = () => {
       alt: 'photo5',
       title: 'Project 5',
       description: ' Formserver project',
-      url: "https://formserverweb.vercel.app/"
+      url: "https://formserverweb.vercel.app/",
+      width: 500,  // specify actual width
+      height: 300  // specify actual height
 
     },
     {
@@ -58,7 +69,9 @@ const Portfolio = () => {
       alt: 'photo6',
       title: 'Link to pages',
       description: 'Click to view more details',
-      url: "https://ib-academy.nl/"
+      url: "https://ib-academy.nl/",
+      width: 500,  // specify actual width
+      height: 300  // specify actual height
 
     },
   ];
@@ -74,11 +87,13 @@ const Portfolio = () => {
             className="relative group rounded-lg overflow-hidden aspect-square"
           >
             {/* Image */}
-            <img
-              src={item.src}
-              alt={item.alt}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
+            <Image
+          src={item.src}
+          alt={item.alt}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          width={item.width}  // If you have these in your item data
+          height={item.height}  // If you have these in your item data
+        />
             
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

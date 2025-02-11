@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
-import { CiLinkedin } from "react-icons/ci";
+
 import { FaWhatsapp } from "react-icons/fa6";
 import 'react-toastify/dist/ReactToastify.css';
 

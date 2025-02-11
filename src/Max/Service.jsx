@@ -35,7 +35,7 @@ const Service = () => {
           <div className=' flex flex-col ball hover:bg-[black] hover:text-[white]  hover:  pull items-center justify-center text-center'>
               <FaReact size={50} className='text-[#CF1F1F] hover:text-[white]'/>
               <h2 className=' font-mono text-[40px] text-[#E9E9E9]  '>Branding</h2>
-              <p className='w-[25vw] max-sm:w-[65vw] font-mono text-[13px] text-[#E9E9E9]  max-lg:w-[80vw]'>From logo design to complete brand identity systems, I create brands that resonate with your audience. I collaborate with you to understand your values, mission, and target market to design visuals that communicate your brand's message clearly.</p>
+              <p className='w-[25vw] max-sm:w-[65vw] font-mono text-[13px] text-[#E9E9E9]  max-lg:w-[80vw]'>From logo design to complete brand identity systems, I create brands that resonate with your audience. I collaborate with you to understand your values, mission, and target market to design visuals that communicate your brand&apos;'s message clearly.</p>
           </div>
        </SwiperSlide>
        <SwiperSlide>
@@ -49,7 +49,7 @@ const Service = () => {
           <div className=' flex flex-col ball  items-center hover:bg-[black] hover:text-[white]  pull justify-center text-center'>
             <FaRocket size={50} className='text-[#CF1F1F]  hover:text-[white]'  />
                 <h2 className=' font-mono text-[40px] text-[#E9E9E9] '>Development</h2>
-                <p className='w-[25vw] text-[13px] max-sm:w-[75vw] font-mono text-[#E9E9E9] max-lg:w-[80vw]'> I use cutting-edge technologies to develop dynamic web applications tailored to your specific needs. Whether it's integrating complex systems, developing databases, or providing custom functionality, I ensure your app runs smoothly and securely.</p>
+                <p className='w-[25vw] text-[13px] max-sm:w-[75vw] font-mono text-[#E9E9E9] max-lg:w-[80vw]'>I use cutting-edge technologies to develop dynamic web applications tailored to your specific needs. Whether it&apos;s integrating complex systems, developing databases, or providing custom functionality, I ensure your app runs smoothly and securely.</p>
           </div>
        </SwiperSlide>
        <SwiperSlide> 

@@ -1,6 +1,5 @@
 import React from 'react'
 import { GiGraduateCap } from "react-icons/gi";
-import { MdWork } from "react-icons/md";
 import { MdDeveloperMode } from "react-icons/md";
 
 
@@ -21,7 +20,7 @@ const Resume = () => {
                     <div className="flex flex-col gap-5">
                         <h1 className='text-[30px] font-mono'>Professional Experience</h1>
                         <h1 className='text-[25px] text-[#CF1F1F] font-mono '>Sep 2020 - May 2024</h1>
-                        <p className=' font-mono text-start max-sm:w-[75vw] max-lg:w-[80vw]  w-[30vw]'>With years of experience in both web development and computer science, I have contributed to numerous projects ranging from dynamic websites to innovative software applications.</p>
+                        <p className=' font-mono text-start max-sm:w-[75vw] max-lg:w-[80vw]  w-[30vw]'>With years of experience in both web development and computer science.. I have contributed to numerous projects ranging from dynamic websites to innovative software applications.</p>
                     </div>
                 </div>
           </div>
@@ -68,7 +67,7 @@ const Resume = () => {
                   <div>
                       <h1 className='text-[30px] font-mono'>Web Service</h1>
                       <h1 className='text-[25px] text-[#CF1F1F] font-mono '>Jan 2019 - Dec 2023</h1>
-                      <p className=' font-mono items-start max-sm:w-[75vw] max-lg:w-[80vw]  w-[30vw]'>With a Master's degree in Computer Science, I have gained a deep understanding of the theoretical and practical aspects of computing, which allows me to approach web development with an analytical and methodical mindset.</p>
+                      <p className=' font-mono items-start max-sm:w-[75vw] max-lg:w-[80vw]  w-[30vw]'>With a Master&apos; degree in Computer Science, I have gained a deep understanding of the theoretical and practical aspects of computing, which allows me to approach web development with an analytical and methodical mindset.</p>
                   </div>
               </div>
          </div>
