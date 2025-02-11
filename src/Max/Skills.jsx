@@ -5,10 +5,10 @@ const ProgressBar = ({ skill, percentage }) => {
   const [width, setWidth] = useState(0)
 
   useEffect(() => {
-    const time = setTimeout(() => setWidth(percentage), 100)
-    return () => clearTimeout(1)
-  }, [percentage])
-
+    const timer = setTimeout(() => setWidth(percentage), 100);
+    return () => clearTimeout(timer);
+  }, [percentage]);
+  
   return (
     <div   className="mb-4">
       <div className="flex  justify-between items-center mb-1">

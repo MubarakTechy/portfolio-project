@@ -35,7 +35,7 @@ const Service = () => {
           <div className=' flex flex-col ball hover:bg-[black] hover:text-[white]  hover:  pull items-center justify-center text-center'>
               <FaReact size={50} className='text-[#CF1F1F] hover:text-[white]'/>
               <h2 className=' font-mono text-[40px] text-[#E9E9E9]  '>Branding</h2>
-              <p className='w-[25vw] max-sm:w-[65vw] font-mono text-[13px] text-[#E9E9E9]  max-lg:w-[80vw]'>From logo design to complete brand identity systems, I create brands that resonate with your audience. I collaborate with you to understand your values, mission, and target market to design visuals that communicate your brand&apos;'s message clearly.</p>
+              <p className='w-[25vw] max-sm:w-[65vw] font-mono text-[13px] text-[#E9E9E9]  max-lg:w-[80vw]'>From logo design to complete brand identity systems.... I create brands that resonate with your audience. I collaborate with you to understand your values, mission, and target market to design visuals that communicate your brand&apos;'s message clearly.</p>
           </div>
        </SwiperSlide>
        <SwiperSlide>
