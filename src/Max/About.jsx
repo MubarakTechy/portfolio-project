@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Max2 from '../image/profile.jpg';
 import { FaPenClip } from "react-icons/fa6";
@@ -23,7 +24,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
-          <img className='about-img w-[35vw] max-sm:w-[70vw]' src={Max2.src} alt="" />
+          <Image className='about-img w-[35vw] max-sm:w-[70vw]' src={Max2.src} alt="" />
         </motion.div>
 
         <motion.div
