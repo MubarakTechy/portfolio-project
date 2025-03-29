@@ -45,7 +45,7 @@ const Service = () => {
     <div id='Service' className='py-16 px-4 migos md:px-10 bg-[#0F0F0F]'>
       <div className='flex flex-col items-center mb-12'>
         <h1 className='font-bold text-3xl md:text-5xl text-[#E9E9E9] mb-2'>What I Do</h1>
-        <div className='w-24 h-1 bg-[#CF1F1F] rounded-full'></div>
+        <div className='w-[15vw]  max-sm:w-[20vw] h-1 bg-[#CF1F1F] rounded-full'></div>
       </div>
 
       <div className='max-w-6xl mx-auto'>

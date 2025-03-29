@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Max2 from '../image/profile.jpg';
+import Max2 from '../image/press.jpg';
 import { FaPenClip } from "react-icons/fa6";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoCodeSlash } from "react-icons/io5";
@@ -24,7 +24,11 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
-          <Image className='about-img w-[35vw] max-sm:w-[70vw]' src={Max2.src} alt="" />
+          <Image className=' rounded-[15px] max-sm:w-[70vw]' 
+              src={Max2.src} 
+              width={460} 
+              height={250} 
+              priority   alt="" />
         </motion.div>
 
         <motion.div
@@ -48,7 +52,7 @@ const About = () => {
           >
             {[
               { icon: <FaPenClip size={35} />, text: "Designer", bg: "bg-[#CF1F1F]", textColor: "text-white" },
-              { icon: <AiOutlineUser size={35} />, text: "Developing", bg: "bg-transparent", textColor: "text-black border border-black" },
+              { icon: <AiOutlineUser size={35} />, text: "Developer", bg: "bg-transparent", textColor: "text-black border border-black" },
               { icon: <IoCodeSlash size={35} />, text: "Programmer", bg: "bg-[#CF1F1F]", textColor: "text-white" }
             ].map((btn, index) => (
               <motion.button
