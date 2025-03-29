@@ -16,8 +16,8 @@ const Portfolio = () => {
       title: 'Project 1',
       description: ' AI project' ,
       url: "https://app.youlearn.ai/",
-      width: 500,  // specify actual width
-      height: 300  // specify actual height
+      width: 500,  
+      height: 300 
     },
     {
       id: 2,
@@ -46,8 +46,8 @@ const Portfolio = () => {
       src: photo4.src,
       alt: 'photo4',
       title: 'Project 4',
-      description: ' LMS project',
-      url: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiP9PX-pLaLAxVuolAGHSxaAHEYABAWGgJkZw&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y9nTw7T0zshE6qCiRJGRvFYnnRAB67wSbvvDl48cgKhOJJAfjCP0cRoCViMQAvD_BwE&ohost=www.google.com&cid=CAESVOD2pOT0_20TU2JC5hzlSOzJjLi12X_WF5QqJ1spYeX0mqsR_th_TG1s1xhDrenx1osqvuHJOYqKIN7_jEd-QHI34j5YQ-5Oi5R0VDj-GHvATsnj7g&sig=AOD64_0Fri0n2fQwMMJ8PHafvTOWsiwBwA&q&adurl&ved=2ahUKEwiAg_D-pLaLAxXGVkEAHRaGAEIQ0Qx6BAgJEAE",
+      description: ' Tech solution project',
+      url: "https://1691-tech-solution-cg8e.vercel.app/",
       width: 500,  // specify actual width
       height: 300  // specify actual height
 

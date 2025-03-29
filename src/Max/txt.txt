@@ -102,3 +102,160 @@ export default Porfolio
 export default Service
 
 import axios from 'axios'; const API_URL = 'https://api.moviesdatabase.org/v4'; const fetchMovies = async () => { try { const response = await axios.get(`${API_URL}/titles/search?query=american`); return response.data; } catch (error) { console.error('Error fetching movies:', error); } }; export default fetchMovies;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'use client'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { FaPenClip, FaCode, FaUser } from "react-icons/fa";
+
+
+const About = () => {
+  const [activeSkill, setActiveSkill] = useState(null);
+
+  const skills = [
+    {
+      icon: <FaPenClip />,
+      title: 'Designer',
+      description: 'Creating intuitive and visually appealing user interfaces that tell a story.',
+      color: 'bg-red-500'
+    },
+    {
+      icon: <FaUser />,
+      title: 'Developer',
+      description: 'Building robust, scalable web applications with clean, efficient code.',
+      color: 'bg-blue-500'
+    },
+    {
+      icon: <FaCode />,
+      title: 'Programmer',
+      description: 'Solving complex problems through innovative technological solutions.',
+      color: 'bg-green-500'
+    }
+  ];
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center px-4 py-16"
+    >
+      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* Image Section */}
+        <motion.div 
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center"
+        >
+          <div className="relative">
+            <Image
+              src={'/image/IMG-20240810-WA0044_1.jpg'}
+              alt="Mubarak's Profile"
+              width={500}
+              height={600}
+              className="rounded-xl shadow-2xl object-cover"
+              style={{ 
+                maxWidth: '400px', 
+                maxHeight: '500px', 
+                aspectRatio: '3/4'
+              }}
+            />
+            <motion.div 
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              className="absolute -bottom-4 -right-4 bg-red-500 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg"
+            >
+              <span className="text-2xl font-bold">3+</span>
+              <span className="absolute text-xs bottom-1">Years</span>
+            </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Content Section */}
+        <motion.div 
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="space-y-6"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            About <span className="text-red-500">Me</span>
+          </h2>
+          
+          <p className="text-lg text-gray-600 mb-6">
+            Hi, I&apos;m Mubarak a passionate web developer with 3 years of experience crafting impactful digital experiences. I transform complex ideas into interactive, user-friendly websites with precision and creativity.
+          </p>
+
+          <div className="grid grid-cols-3 gap-4">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill.title}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setActiveSkill(index)}
+                className={`
+                  ${skill.color} text-white rounded-xl p-4 text-center 
+                  cursor-pointer transition-all duration-300
+                  ${activeSkill === index ? 'ring-4 ring-opacity-50 ring-white' : ''}
+                `}
+              >
+                <div className="text-3xl mb-2 flex justify-center">{skill.icon}</div>
+                <h3 className="font-semibold">{skill.title}</h3>
+              </motion.div>
+            ))}
+          </div>
+
+          {activeSkill !== null && (
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-6 p-4 bg-white rounded-xl shadow-lg"
+            >
+              <p className="text-gray-600">
+                {skills[activeSkill].description}
+              </p>
+            </motion.div>
+          )}
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default About;

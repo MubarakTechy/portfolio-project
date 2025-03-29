@@ -1,35 +1,69 @@
-import React from 'react'
-import Image from 'next/image'
-import Max2 from '../image/IMG-20240810-WA0044_1.jpg';
+'use client'
+import React from 'react';
+import { motion } from 'framer-motion';
+import Max2 from '../image/profile.jpg';
 import { FaPenClip } from "react-icons/fa6";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoCodeSlash } from "react-icons/io5";
 
-// About component with image, text, and buttons. The buttons are currently empty placeholders.
+
 const About = () => {
   return (
-    <div id='About' className='bg-[#E9E9E9]  flex flex-col justify-center items-center overflow-hidden p-10'>
-        <div className=' flex  max-md:flex-col max-lg:flex-col justify-center items-center gap-10 '>
-        <Image
-          className='about-img w-[35vw] max-sm:w-[70vw]'
-          src={Max2.src}
-          alt="Max profile"
-          width={500}  // Adjust based on your actual image size
-          height={300} // Adjust based on your actual image size
-          priority  // Add this if it's an important above-the-fold image
-        />
-           <div className='flex flex-col gap-7 '>
-              <h1 className=' text-6xl font-mono text-center text-[#CF1F1F]'>About me</h1>
-              <p className='text-lg text-gray-600  max-lg:w-[90vw]  max-sm:w-[90vw] max-md:w-[100vw] w-[45vw] font-mono text-start'>Hi, I&apos;m Mubarak – a passionate web developer with 3 years of experience crafting impactful digital experiences. I thrive on turning ideas into interactive, user-friendly websites. From concept to deployment, I bring dedication and precision to every project. Let's build something amazing together.</p>
-              <div className=' flex gap-8 items-center justify-center  '>
-                <button className='w-[10vw] max-sm:w-[23vw] max-lg:w-[30vw]  max-md:w-[40vw] max-sm:text-[15px] bg-[#CF1F1F] rounded  text-white text-[25px] font-mono gap-2 border-border 2 hover:text-white hover:bg-black  flex flex-col p-3 ' ><FaPenClip size={35} /> Designer</button>
-                <button className='w-[11vw]  max-sm:w-[23vw] max-lg:w-[90vw]  max-md:w-[40vw]   max-sm:text-[15px] rounded text-[25px] outline font-mono gap-2 border-border 2 hover:text-white hover:bg-black  flex flex-col p-3 ' ><AiOutlineUser size={35} />Developing</button>
-                <button className='w-[11vw] max-sm:w-[23vw]  max-lg:w-[90vw] max-md:w-[40vw]   max-sm:text-[15px]  bg-[#CF1F1F]  rounded text-[25px] text-white font-mono gap-2 border-border 2 hover:text-white hover:bg-black  flex flex-col p-3 ' ><IoCodeSlash size={35} />Programmer</button>
-              </div>
-          </div>
-        </div>
-    </div>
-  )
-}
+    <motion.div
+      id='About'
+      className='bg-[#E9E9E9] flex flex-col justify-center items-center overflow-hidden p-10'
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.div
+        className='flex max-md:flex-col justify-center items-center gap-10'
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
+          <img className='about-img w-[35vw] max-sm:w-[70vw]' src={Max2.src} alt="" />
+        </motion.div>
 
-export default About
+        <motion.div
+          className='flex flex-col gap-7'
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className='text-6xl font-mono text-center text-[#CF1F1F]'>About me</h1>
+          <p className='text-lg text-gray-600 max-sm:w-[90vw] w-[45vw] font-mono text-start'>
+            Hello! I&apos;m Mubarak. I&apos;m a web developer, and I&apos;m very passionate and dedicated to my work.
+            With 3 years of experience as a professional web developer, I have acquired the skills and knowledge
+            necessary to make your project a success. I enjoy every step of the design process, from discussion to collaboration.
+          </p>
+
+          <motion.div
+            className='flex gap-8 items-center justify-center'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            {[
+              { icon: <FaPenClip size={35} />, text: "Designer", bg: "bg-[#CF1F1F]", textColor: "text-white" },
+              { icon: <AiOutlineUser size={35} />, text: "Developing", bg: "bg-transparent", textColor: "text-black border border-black" },
+              { icon: <IoCodeSlash size={35} />, text: "Programmer", bg: "bg-[#CF1F1F]", textColor: "text-white" }
+            ].map((btn, index) => (
+              <motion.button
+                key={index}
+                className={`w-[11vw] max-sm:w-[23vw] max-sm:text-[15px] rounded text-[25px] font-mono gap-2 p-3 flex flex-col ${btn.bg} ${btn.textColor} hover:bg-black hover:text-white`}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                {btn.icon} {btn.text}
+              </motion.button>
+            ))}
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default About;
